@@ -9,10 +9,10 @@ function App() {
 
   return (
     <>
-      <div className="big-container">
+      <div className="w-[800px] flex h-[400px] bg-white rounded-[20px] p-[20px]">
   
-        <Input className="input"/>
-        <Output className="output"/>
+        <Input/>
+        <Output/>
 
       </div>
     </>
