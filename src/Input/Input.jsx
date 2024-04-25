@@ -1,31 +1,24 @@
 import Button from "../Button/Button"
-import BillAmount from "../assets/BillAmount/BillAmount"
+import BillAmount from "../BillAmount/BillAmount"
+import TipSelector from "../TipSelector/TipSelector"
+import NoPeople from "../NoPeople/NoPeople"
 
 function Input() {
 
-  const buttonClick = () => {
-    console.log("hey I'm a button")
+  const BillNo = () => {
+
   }
 
     return (
       <div className="w-[50%] p-[20px]">
         <div className="mb-[30px]">
-          <BillAmount/>
+          <BillAmount myFunc={BillNo}/>
         </div>
         <div>
-          <p className="text-left">Select Tip %</p>
-          <div className="flex flex-wrap gap-[10px] mb-[30px]">
-            <Button funkyKong={buttonClick}/>
-            <Button funkyKong={buttonClick}/>
-            <Button funkyKong={buttonClick}/>
-            <Button funkyKong={buttonClick}/>
-            <Button funkyKong={buttonClick}/>
-            <Button funkyKong={buttonClick}/>
-          </div>
+          <TipSelector/>
         </div>
         <div>
-          <p>Number of people</p>
-          <input className="border-2 bg-teal-100 w-[100%] rounded" type="text"/>
+          <NoPeople/>
         </div>
       </div>
     )
